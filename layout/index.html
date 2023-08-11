@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Esports Live Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <h1>Esports Live Dashboard</h1>
+    </header>
+    <div class="container">
+      <section class="match-overview">
+        <h2>Match Overview</h2>
+        <div class="border"></div>
+        <p>Match: Team A vs Team B</p>
+        <p>Map: Map Name</p>
+        <p>Score: Team A - Team B</p>
+      </section>
+      <section class="live-stats">
+        <h2>Live Statistics</h2>
+        <div class="border"></div>
+        <div class="team-stats">
+          <div class="team">
+            <h3>Team A</h3>
+            <p>Kills: 15</p>
+            <p>Deaths: 7</p>
+          </div>
+          <div class="team">
+            <h3>Team B</h3>
+            <p>Kills: 12</p>
+            <p>Deaths: 10</p>
+          </div>
+        </div>
+      </section>
+      <section class="economy-resources">
+        <h2>Economy and Resources</h2>
+        <div class="border"></div>
+        <div class="team-economy">
+          <div class="team">
+            <h3>Team A</h3>
+            <p>Money: $8000</p>
+            <p>Inventory Value: $5000</p>
+          </div>
+          <div class="team">
+            <h3>Team B</h3>
+            <p>Money: $7500</p>
+            <p>Inventory Value: $4800</p>
+          </div>
+        </div>
+      </section>
+      <section class="map-control">
+        <h2>Map Control and Objectives</h2>
+        <div class="border"></div>
+        <div class="map-control-info">
+          <p>Control: Team A - 60%, Team B - 40%</p>
+          <p>Objectives Completed: Team A - 3, Team B - 2</p>
+        </div>
+      </section>
+
+      <section class="prediction">
+        <h2>Match Prediction</h2>
+        <div class="border"></div>
+        <p>Team A Win Probability: <span class="win-probability">60%</span></p>
+        <p>Team B Win Probability: <span class="win-probability">40%</span></p>
+      </section>
+      <section class="timeline">
+        <h2>Match Timeline</h2>
+        <div class="border"></div>
+        <div class="timeline-events">
+          <div class="event">
+            <p>5:30 - Team A takes control of Site A</p>
+          </div>
+          <div class="event">
+            <p>6:45 - Team B secures Bomb Plant at Site B</p>
+          </div>
+          <!-- Add more timeline events here -->
+        </div>
+      </section>
+
+      <!-- Additional sections of the dashboard -->
+    </div>
+    <div class="container">
+      <section class="live-updates">
+        <h2>Live Updates</h2>
+        <div class="border"></div>
+        <div class="update-list">
+          <div class="update success">
+            <p>
+              <span class="time">10:15:</span> Team A secures Round 10 with a
+              defuse at Site B.
+            </p>
+          </div>
+          <div class="update danger">
+            <p>
+              <span class="time">11:30:</span> Team B takes control of Site A
+              after a successful retake.
+            </p>
+          </div>
+          <div class="update info">
+            <p>
+              <span class="time">12:45:</span> Team A's MVP, Player X, scores a
+              headshot with an AWP.
+            </p>
+          </div>
+          <!-- Add more live updates here -->
+        </div>
+      </section>
+      <section class="live-commentary">
+        <h2>Live Commentary</h2>
+        <div class="border"></div>
+        <div class="audio-container">
+          <button class="play-button">
+            <i class="fas fa-play"></i>
+          </button>
+          <audio controls>
+            <!-- Add the audio source here -->
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2023 Esports Dashboard. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

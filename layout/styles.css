@@ -1,0 +1,114 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+section {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  position: relative;
+}
+
+.border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 2px;
+  height: 100%;
+  background-color: #ddd;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.team-stats,
+.team-economy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team {
+  flex: 1;
+}
+
+/* Add styling for the prediction section */
+.prediction p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.prediction p .win-probability {
+  font-weight: bold;
+  color: #1976d2; /* Dark blue color */
+}
+
+.map-control-info p,
+.timeline-events .event {
+  margin-top: 10px;
+}
+
+.live-updates {
+  width: 100%;
+}
+
+.live-updates .update-list {
+  margin-top: 10px;
+}
+
+.update {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.update .time {
+  font-weight: bold;
+}
+
+.success {
+  background-color: #c7f1d9;
+  border-left: 4px solid #4caf50;
+}
+
+.danger {
+  background-color: #f6c6b9;
+  border-left: 4px solid #f44336;
+}
+
+.info {
+  background-color: #cce4f6;
+  border-left: 4px solid #2196f3;
+}
+/* Add more styling for different sections and components as needed */
